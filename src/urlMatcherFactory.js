@@ -447,7 +447,7 @@ function $UrlMatcherFactory() {
 
   var isCaseInsensitive = false, isStrictMode = true;
 
-  var enqueue = true, typeQueue = [], injector, defaultTypes = {
+  var enqueue = false, typeQueue = [], injector, defaultTypes = {
     int: {
       decode: function(val) {
         return parseInt(val, 10);
